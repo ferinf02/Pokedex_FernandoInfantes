@@ -37,6 +37,8 @@ namespace Pokedex_FernandoInfantes
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.descripcion = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,10 +87,10 @@ namespace Pokedex_FernandoInfantes
             // 
             // nombrePokemon
             // 
-            this.nombrePokemon.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.nombrePokemon.BackColor = System.Drawing.Color.Transparent;
             this.nombrePokemon.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombrePokemon.ForeColor = System.Drawing.SystemColors.Control;
-            this.nombrePokemon.Location = new System.Drawing.Point(200, 339);
+            this.nombrePokemon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.nombrePokemon.Location = new System.Drawing.Point(272, 338);
             this.nombrePokemon.Name = "nombrePokemon";
             this.nombrePokemon.Size = new System.Drawing.Size(94, 25);
             this.nombrePokemon.TabIndex = 3;
@@ -116,12 +118,39 @@ namespace Pokedex_FernandoInfantes
             // 
             // descripcion
             // 
-            this.descripcion.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcion.BackColor = System.Drawing.Color.Transparent;
+            this.descripcion.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.descripcion.Location = new System.Drawing.Point(204, 380);
             this.descripcion.Name = "descripcion";
             this.descripcion.Size = new System.Drawing.Size(237, 116);
             this.descripcion.TabIndex = 6;
             this.descripcion.Text = "label1";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(569, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Evoluciones";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(553, 292);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(62, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Datos";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // VentanaPrincipal
             // 
@@ -131,6 +160,8 @@ namespace Pokedex_FernandoInfantes
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(721, 545);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -157,6 +188,8 @@ namespace Pokedex_FernandoInfantes
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label descripcion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
