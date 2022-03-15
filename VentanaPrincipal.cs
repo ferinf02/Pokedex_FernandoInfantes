@@ -19,13 +19,27 @@ namespace Pokedex_FernandoInfantes
         public VentanaPrincipal()
         {
             InitializeComponent();
+            misPokemons = miConexion.getPokemonPorId(idActual);
+            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            cambiarImagenes();
         }
 
         private void Izquierda_Click(object sender, EventArgs e)
         {
+            if (idActual == 1)
+            {
+                idActual = 151;
+            }
+            else
+            {
             idActual--;
+            }
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            descripcion.Text = misPokemons.Rows[0]["descripcion"].ToString();
+            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            cambiarImagenes();
         }
 
         private Image convierteBlobAImagen(byte[] img)
@@ -36,10 +50,43 @@ namespace Pokedex_FernandoInfantes
 
         private void derecha_Click(object sender, EventArgs e)
         {
+            if (idActual == 151)
+            {
+                idActual = 1;
+            }
+            else
+            {
             idActual++;
+            }
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            descripcion.Text = misPokemons.Rows[0]["descripcion"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+            cambiarImagenes();
+        }
+
+        private void cambiarImagenes()
+        {
+            if (!misPokemons.Rows[0]["posEvolucion"].ToString().Equals("")&&
+                !miConexion.getPokemonPorId(idActual+1).Rows[0]["posEvolucion"].ToString().Equals(""))
+            {
+                pictureBox2.Image = convierteBlobAImagen((byte[])miConexion.getPokemonPorId(idActual+1).Rows[0]["imagen"]);
+                pictureBox3.Image = convierteBlobAImagen((byte[])miConexion.getPokemonPorId(idActual+2).Rows[0]["imagen"]);
+            }
+            else if (!misPokemons.Rows[0]["posEvolucion"].ToString().Equals(""))
+            {
+                pictureBox2.Image = convierteBlobAImagen((byte[])miConexion.getPokemonPorId(idActual + 1).Rows[0]["imagen"]);
+                pictureBox3.Image = null;
+            }else if (misPokemons.Rows[0]["posEvolucion"].ToString().Equals(""))
+            {
+                pictureBox2.Image = null;
+                pictureBox3.Image = null;
+            }
+        }
+
+        private void VentanaPrincipal_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
