@@ -47,6 +47,9 @@ namespace Pokedex_FernandoInfantes
             this.altura = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.habilidad = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +97,7 @@ namespace Pokedex_FernandoInfantes
             this.movimiento1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimiento1.Location = new System.Drawing.Point(231, 181);
             this.movimiento1.Name = "movimiento1";
-            this.movimiento1.Size = new System.Drawing.Size(100, 23);
+            this.movimiento1.Size = new System.Drawing.Size(152, 23);
             this.movimiento1.TabIndex = 4;
             this.movimiento1.Text = "label2";
             // 
@@ -104,7 +107,7 @@ namespace Pokedex_FernandoInfantes
             this.movimiento2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimiento2.Location = new System.Drawing.Point(231, 213);
             this.movimiento2.Name = "movimiento2";
-            this.movimiento2.Size = new System.Drawing.Size(100, 23);
+            this.movimiento2.Size = new System.Drawing.Size(152, 23);
             this.movimiento2.TabIndex = 5;
             this.movimiento2.Text = "label2";
             // 
@@ -114,7 +117,7 @@ namespace Pokedex_FernandoInfantes
             this.movimiento3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimiento3.Location = new System.Drawing.Point(231, 245);
             this.movimiento3.Name = "movimiento3";
-            this.movimiento3.Size = new System.Drawing.Size(100, 23);
+            this.movimiento3.Size = new System.Drawing.Size(152, 23);
             this.movimiento3.TabIndex = 6;
             this.movimiento3.Text = "label2";
             // 
@@ -124,7 +127,7 @@ namespace Pokedex_FernandoInfantes
             this.movimiento4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movimiento4.Location = new System.Drawing.Point(231, 279);
             this.movimiento4.Name = "movimiento4";
-            this.movimiento4.Size = new System.Drawing.Size(100, 23);
+            this.movimiento4.Size = new System.Drawing.Size(152, 23);
             this.movimiento4.TabIndex = 7;
             this.movimiento4.Text = "label3";
             // 
@@ -218,6 +221,36 @@ namespace Pokedex_FernandoInfantes
             this.habilidad.TabIndex = 16;
             this.habilidad.Text = "label6";
             // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(17, 443);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(55, 55);
+            this.button1.TabIndex = 17;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(101, 443);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(55, 55);
+            this.button2.TabIndex = 18;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(185, 443);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(55, 55);
+            this.button3.TabIndex = 19;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,6 +258,9 @@ namespace Pokedex_FernandoInfantes
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(395, 608);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.habilidad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.altura);
@@ -269,5 +305,8 @@ namespace Pokedex_FernandoInfantes
         private System.Windows.Forms.Label altura;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label habilidad;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
