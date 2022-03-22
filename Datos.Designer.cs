@@ -95,7 +95,7 @@ namespace Pokedex_FernandoInfantes
             // 
             this.movimiento1.BackColor = System.Drawing.Color.Transparent;
             this.movimiento1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimiento1.Location = new System.Drawing.Point(231, 181);
+            this.movimiento1.Location = new System.Drawing.Point(230, 175);
             this.movimiento1.Name = "movimiento1";
             this.movimiento1.Size = new System.Drawing.Size(152, 23);
             this.movimiento1.TabIndex = 4;
@@ -105,7 +105,7 @@ namespace Pokedex_FernandoInfantes
             // 
             this.movimiento2.BackColor = System.Drawing.Color.Transparent;
             this.movimiento2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimiento2.Location = new System.Drawing.Point(231, 213);
+            this.movimiento2.Location = new System.Drawing.Point(231, 205);
             this.movimiento2.Name = "movimiento2";
             this.movimiento2.Size = new System.Drawing.Size(152, 23);
             this.movimiento2.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace Pokedex_FernandoInfantes
             // 
             this.movimiento3.BackColor = System.Drawing.Color.Transparent;
             this.movimiento3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimiento3.Location = new System.Drawing.Point(231, 245);
+            this.movimiento3.Location = new System.Drawing.Point(231, 235);
             this.movimiento3.Name = "movimiento3";
             this.movimiento3.Size = new System.Drawing.Size(152, 23);
             this.movimiento3.TabIndex = 6;
@@ -125,9 +125,9 @@ namespace Pokedex_FernandoInfantes
             // 
             this.movimiento4.BackColor = System.Drawing.Color.Transparent;
             this.movimiento4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movimiento4.Location = new System.Drawing.Point(231, 279);
+            this.movimiento4.Location = new System.Drawing.Point(231, 265);
             this.movimiento4.Name = "movimiento4";
-            this.movimiento4.Size = new System.Drawing.Size(152, 23);
+            this.movimiento4.Size = new System.Drawing.Size(152, 54);
             this.movimiento4.TabIndex = 7;
             this.movimiento4.Text = "label3";
             // 
@@ -197,7 +197,7 @@ namespace Pokedex_FernandoInfantes
             this.altura.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.altura.Location = new System.Drawing.Point(88, 202);
             this.altura.Name = "altura";
-            this.altura.Size = new System.Drawing.Size(100, 23);
+            this.altura.Size = new System.Drawing.Size(116, 23);
             this.altura.TabIndex = 14;
             this.altura.Text = "label5";
             // 
@@ -217,7 +217,7 @@ namespace Pokedex_FernandoInfantes
             this.habilidad.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habilidad.Location = new System.Drawing.Point(13, 254);
             this.habilidad.Name = "habilidad";
-            this.habilidad.Size = new System.Drawing.Size(100, 23);
+            this.habilidad.Size = new System.Drawing.Size(191, 23);
             this.habilidad.TabIndex = 16;
             this.habilidad.Text = "label6";
             // 

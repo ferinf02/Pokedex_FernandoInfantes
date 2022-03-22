@@ -91,9 +91,9 @@ namespace Pokedex_FernandoInfantes
             {
                 id1 = idActual;
                 id2 = idActual + 1;
-                button1.BackgroundImage = convierteBlobAImagen((byte[])miConexion.getPokemonPorId(idActual + 1).Rows[0]["imagen"]);
+                button2.BackgroundImage = convierteBlobAImagen((byte[])miConexion.getPokemonPorId(idActual + 1).Rows[0]["imagen"]);
                 button3.Hide();
-                button2.BackgroundImage = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+                button1.BackgroundImage = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
             }
             else if (misPokemons.Rows[0]["posEvolucion"].ToString().Equals(""))
             {
